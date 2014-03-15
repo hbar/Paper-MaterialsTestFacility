@@ -1,4 +1,4 @@
 Paper-MaterialsTestFacility
 ===========================
 
-LaTeX Manuscript for cyclotron based radiation damage test facility for materials analysis.
+LaTeX Manuscript for a design study for a cyclotron based radiation damage test facility for materials analysis.
