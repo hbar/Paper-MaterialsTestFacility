@@ -10,7 +10,7 @@
 \usepackage{setspace} % To control spacing
 \usepackage{tabluar}
 % Declare journal we're submitting to:
-\journal{Journal (Name Goes here)}
+\journal{Journal of Nuclear Materials}
 
 
 \begin{document}
@@ -19,30 +19,41 @@
 
 \begin{frontmatter}
 
-\title{A superconducting cyclotron accelerator based materials test facility for bulk radiation damage studies}
+\title{A superconducting dual-beam cyclotron accelerator based materials test facility for bulk radiation damage studies}
 
 %\author{H.S.~Barnard\corref{cor1}}
 %\ead{hbar@mit.edu}
 
 \author{H.S.~Barnard}
 %\author{T.~Antaya}
-\author{R.~Balinger}
+\author{S.E.~Ferry}
+\author{J.~Payne}
 \author{M.P.~Short}
 \author{T.~Sordelet}
+\author{R.~Ballinger}
 \author{D.G.~Whyte}
-\author{others?}
 % \ead{spad12@mit.edu}
 
 \address{Massachusetts Institute of
-  Technology, Nuclear Science and Engineering. 
-  Cambridge, Massachusetts, USA}
+  Technology, Dept. of Nuclear Science and Engineering. 
+  Cambridge, Massachusetts, 02139,  USA}
 
 %\cortext[cor1]{Corresponding author. Tel.:~;
 %  fax:~}
 
 \begin{abstract}
 
-A design study has been conducted for a materials test facility (MTF) utilizing superconducting cyclotron accelerators for simulating neutron damage and helium accumulation in materials for fission reactors and fusion applications.  Superconducting cyclotrons are compact and can produce high energy beams allowing for inexpensive testing of thick ($\sim 1\;\mathrm{mm}$) material samples.  A 35 MeV, 1 mA proton beam is used for simulating atomic displacement damage caused by neutrons with damage rates for on the order of 50--200 displacements per atom (DPA) per year for various materials.  By using a high energy beam with a range greater than the samples' thickness, relatively uniform bulk damage can be achieved in the samples.  The use of thick samples preserves the materials' micro-structure enabling mechanical testing of macroscopic properties.  A 100 MeV cyclotron with an energy degrader is used to produce a variable energy helium beam for helium implantation.  The cyclotrons are independently controlled to match the He/dpa ratio to specific environments/neutron spectra or to independently study the effects of He implantation and displacement damage.  The novel design for MTF target chamber uses helium-jet impingement cooling to remove heat from multiple samples, allowing for steady state operation and in-situ tensile testing so that samples can be irradiated under active loads.  Critical issues associated with heat removal, beam material interactions, and operating limits are studied to demonstrate the feasibility of the MTF.
+A materials test facility (MTF) utilizing superconducting cyclotron accelerators has been designed to simulate simultaneous neutron damage and helium 
+accumulation in materials for fission and fusion applications.  Superconducting cyclotrons can produce high-energy ion beams in small spaces, allowing 
+for relatively inexpensive testing of thick ($\sim 1\;\mathrm{mm}$) material samples.  A 35 MeV, 1 mA proton beam is used for simulating atomic 
+displacement damage caused by neutrons with damage rates of 50--200 displacements per atom (DPA) per year for various materials.  A 100 MeV He-ion 
+cyclotron with an energy degrader is used to produce a variable energy helium beam for simultaneous helium implantation.  Employing high energy beams 
+with a range greater than the sample's thickness enables the application of uniform bulk radiation damage, in contrast to heavy ion or lower energy 
+proton irradiation studies.  The use of thick samples permits code-approved mechanical testing of macroscopic properties.  The cyclotrons can be 
+independently controlled to match the He/dpa ratio to specific environments/neutron spectra or to independently study the effects of He implantation 
+and displacement damage.  The novel design for MTF target chamber uses helium-jet impingement cooling to remove heat from multiple samples, allowing 
+for steady state operation and in-situ mechanical testing.  Critical issues associated with heat removal, beam material interactions, and operating 
+limits are studied to demonstrate the feasibility of the MTF.
 
 \end{abstract}
 
@@ -51,8 +62,8 @@ A design study has been conducted for a materials test facility (MTF) utilizing 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
 
-%fusion development \sep plasma-facing components \sep
-%plasma-facing materials \sep plasma--material interactions
+radiation damage \sep materials testing \sep
+accelerators \sep superconducting cyclotron
 
 \PACS 28.52.-s \sep 28.52.Fa \sep 52.40.Hf \sep 52.55.Fa \sep 52.55.Rk
 % 28.52.-s Fusion reactors
@@ -75,13 +86,32 @@ A design study has been conducted for a materials test facility (MTF) utilizing 
 	
 %	A key step in vetting structural materials for future nuclear energy technology will be extensive testing in facilities that can simulate the damaging effects of the proposed reactor on a target material. However, for many of these technologies, the damage rates are expected to be quite high, and there is no existing facility that can simulate damage-over-lifetime on short, research-and-development timescales.
 	
-The study of materials in radiation environments is critical for improving the reliability of modern fission reactors, the development of next generation fission reactors, and the eventual development fusion reactors.  In fission and fusion, neutrons typically damage materials through two mechanisms: the displacement of atoms in the material and the accumulation of helium from (n,$\alpha$) reactions and $\alpha$-decay of activated nuclei.  These processes depend strongly on the neutron spectrum and the physical and nuclear properties of the material.  Since neutrons have relatively long mean free paths, the damage occurs within the bulk of material, causing changes to the material's atomic structure leading to macroscopic changes affecting its mechanical and thermal properties.  
+The study of materials in radiation environments is critical for improving the reliability of modern fission reactors, the development of next 
+generation fission reactors, and the eventual development fusion reactors.  In fission and fusion, neutrons typically damage materials through two 
+mechanisms: the displacement of atoms in the material and the accumulation of helium from (n,$\alpha$) reactions and $\alpha$-decay of activated 
+nuclei.  These processes depend strongly on the neutron spectrum and the physical and nuclear properties of the material.  Since neutrons have 
+relatively long mean free paths, the damage occurs within the bulk of material, causing changes to the material's atomic structure leading to 
+macroscopic changes affecting its mechanical and thermal properties.
 
-The ability to test fission and fusion relevant materials in environments with high neutron fluxes is limited to research reactors, high energy accelerator based techniques such as spallation and D-T target fusion.  These methods, however, induce radiation damage at similar or lower rates than power reactors themselves.  Since most materials in reactors and fusion applications must have lifetimes of several years or greater, the development of new methods of testing materials with increased neutron or neutron-like damage rates will greatly benefit the field of nuclear material science. 
+The ability to test fission and fusion relevant materials in environments with high neutron fluxes is limited to research reactors, high energy 
+accelerator based techniques such as spallation and D-T target fusion.  These methods, however, induce radiation damage at similar or lower rates than 
+power reactors themselves.  Since most materials in reactors and fusion applications must have lifetimes of several years or greater, the development 
+of new methods of testing materials with increased neutron or neutron-like damage rates will greatly benefit the field of nuclear material science.
 
-Currently, simulation of neutron damage with ion irradiation is an established technique \cite{Was,ASTME521}.  The long--range coulomb interactions of the protons increase the damage rate per ion by several orders of magnitude as compared to neutrons. This allows for accelerated radiation damage rates when irradiating materials.  However, these techniques are limited by the difficulty of heat removal from samples and are constrained by low energy ($<10\;$ MeV) beams which can only produce near surface ($<100\;\mathrm{\mu m}$) damage in materials.  To simulate neutron damage effects, high energy proton beams ($\approx$ 30-40 MeV) are required. With recent developments in accelerator technology, it is now possible to achieve these high energies with compact ($\sim$2 m diameter) super conducting cyclotrons instead of linear accelerators (10--100 m length).
+Currently, simulation of neutron damage with ion irradiation is an established technique \cite{Was,ASTME521}.  The long--range coulomb interactions of 
+the protons increase the damage rate per ion by several orders of magnitude as compared to neutrons. This allows for accelerated radiation damage rates 
+when irradiating materials.  However, these techniques are limited by the difficulty of heat removal from samples and are constrained by low energy 
+($<10\;$ MeV) beams which can only produce near surface ($<100\;\mathrm{\mu m}$) damage in materials.  To simulate neutron damage effects, high energy 
+proton beams ($\approx$ 30-40 MeV) are required. With recent developments in accelerator technology, it is now possible to achieve these high energies 
+with compact ($\sim$2 m diameter) super conducting cyclotrons instead of linear accelerators (10--100 m length).
 
-We propose a novel accelerator based materials test facility (MTF) for simulating bulk radiation damage in samples up to $\sim 1\;\mathrm{mm}$ thick.  This facility utilizes advances in superconducting cyclotron technology and two independent ion beams provide unparalleled versatility and in radiation damage simulation.  Neutron damage is simulated in samples contained in temperature controlled target chamber using helium jet-impingement for sample cooling.  Displacement by inducing displacements with a 36 MeV proton beam that penetrates the bulk of the sample.  In addition, a 100 MeV helium beam with an energy degrader allows for a variable energy He source for uniform implantation of helium across the sample to induce materials effects associated with helium accumulation within the material.  MTF will therefore, allow the testing of nuclear materials in a relatively short amount of time with independent control of the damage mechanisms in a temperature controlled, inert gas environment.
+We propose a novel accelerator based materials test facility (MTF) for simulating bulk radiation damage in samples up to $\sim 1\;\mathrm{mm}$ thick.  
+This facility utilizes advances in superconducting cyclotron technology and two independent ion beams provide unparalleled versatility and in radiation 
+damage simulation.  Neutron damage is simulated in samples contained in temperature controlled target chamber using helium jet-impingement for sample 
+cooling.  Displacement by inducing displacements with a 36 MeV proton beam that penetrates the bulk of the sample.  In addition, a 100 MeV helium beam 
+with an energy degrader allows for a variable energy He source for uniform implantation of helium across the sample to induce materials effects 
+associated with helium accumulation within the material.  MTF will therefore, allow the testing of nuclear materials in a relatively short amount of 
+time with independent control of the damage mechanisms in a temperature controlled, inert gas environment.
 
 %This irradiation facility will allow the testing of advanced materials in a relatively short amount of time. MTF uses superconducting cyclotrons to accelerate two beams, of helium and protons. The helium beam with an energy degrader allows for a variable energy He source for uniform implantation of helium across the sample, to simulate the second materials damage effect that occurs in nuclear reactors.
  
